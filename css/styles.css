@@ -62,9 +62,13 @@ p {
         animation-timing-function: ease-in;
     }
 
-    12% { opacity: 1;}
+    12% {
+        opacity: 1;
+    }
 
-    25% { transform: scale(1.2);}
+    25% {
+        transform: scale(1.2);
+    }
 
     75% {
         opacity: 0;
@@ -129,6 +133,7 @@ p {
     .hero .hero-logo {
         width: 60%;
     }
+
     .hero .hero-down {
         width: 15%;
     }
@@ -138,6 +143,7 @@ p {
     .hero .hero-logo {
         width: 80%;
     }
+
     .hero .hero-down {
         width: 20%;
     }
@@ -422,7 +428,7 @@ header.transparente nav a:hover {
 }
 
 .m-l-small {
-    margin-left:0.5rem;
+    margin-left: 0.5rem;
 }
 
 .m-r-small {
@@ -482,12 +488,14 @@ form.contacto {
     width: 50%;
 }
 
+/* Media Query para tablet */
 @media (max-width: 720px) {
     form.contacto {
         width: 75%;
     }
 }
 
+/* Media Query para mobiles */
 @media (max-width: 440px) {
     form.contacto {
         width: 100%;
@@ -528,7 +536,7 @@ input.email {
 button {
     border: none;
     background-color: #a97c50;
-    color:white;
+    color: white;
     font-size: 1rem;
     font-weight: normal;
     padding: 0.5em 1em;
@@ -545,13 +553,14 @@ input[type="checkbox"] {
     display: none;
 }
 
-input[type="checkbox"] + label::before {
+input[type="checkbox"]+label::before {
     content: url('../img/square.svg');
     position: relative;
     top: 5px;
     padding-right: 5px;
 }
-input[type="checkbox"]:checked + label::before {
+
+input[type="checkbox"]:checked+label::before {
     content: url('../img/check-square.svg');
 }
 
@@ -562,12 +571,16 @@ footer {
 }
 
 footer p {
-    color:rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 footer p:first-child {
     color: #a97c50;
     font-weight: bold;
+}
+
+footer p:nth-child(3) {
+    margin-left: 1.5rem;
 }
 
 footer img.rrss {
@@ -585,7 +598,7 @@ footer a:hover {
 }
 
 footer .copyright {
-    color:rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
     font-size: 0.8rem;
     text-align: center;
 }
@@ -665,7 +678,7 @@ footer .copyright {
     color: #a97c50;
 }
 
-.propiedad div:first-child p img { 
+.propiedad div:first-child p img {
     width: 28px;
     height: 28px;
 }
